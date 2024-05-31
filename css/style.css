@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background: linear-gradient(to right, #FFC0CB, #FFFFFF);
+}
+
+canvas {
+    background-color:radial-gradient(#666, #333);
+}
+
+#instructions {
+	position: absolute;
+	color: #000;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+    font-size: 20px;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+
+/* Медиа-запрос для мобильных устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+	body {
+		overflow: auto; /* Разрешаем прокрутку контента на мобильных устройствах */
+	}
+	#instructions {
+		font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+	}
+}
